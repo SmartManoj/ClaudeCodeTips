@@ -17,7 +17,7 @@
     "id": "plan-mode-for-complex-tasks",
     "cooldown": 5,
     "contents": [
-      "Use Plan Mode to prepare for a complex request before making changes. Press […] twice to enable."
+      "Use Plan Mode to prepare for a complex request before making changes. Press [shortcut] twice to enable."
     ]
   },
   {
@@ -209,14 +209,14 @@
     "id": "shift-tab",
     "cooldown": 10,
     "contents": [
-      "Hit […] to cycle between default mode, auto-accept edit mode, and plan mode"
+      "Hit [shortcut] to cycle between default mode, auto-accept edit mode, and plan mode"
     ]
   },
   {
     "id": "image-paste",
     "cooldown": 20,
     "contents": [
-      "Use […] to paste images from your clipboard"
+      "Use [shortcut] to paste images from your clipboard"
     ]
   },
   {
@@ -286,7 +286,7 @@
     "id": "opusplan-mode-reminder",
     "cooldown": 2,
     "contents": [
-      "Your default model setting is Opus Plan Mode. Press […] twice to activate Plan Mode and plan with Claude Opus."
+      "Your default model setting is Opus Plan Mode. Press [shortcut] twice to activate Plan Mode and plan with Claude Opus."
     ]
   },
   {
@@ -307,32 +307,32 @@
     "id": "effort-high-nudge",
     "cooldown": 3,
     "contents": [
-      "Use […] for better one-shot answers. Claude thinks it through first.",
-      "Working on something tricky? […] gives better first answers"
+      "Use /effort high for better one-shot answers. Claude thinks it through first.",
+      "Working on something tricky? /effort high gives better first answers"
     ]
   },
   {
     "id": "subagent-fanout-nudge",
     "cooldown": 3,
     "contents": [
-      "For big tasks, tell Claude to […]. They work in parallel and keep your main thread clean.",
-      "Say […] and Claude sends a team. Each one digs deep so nothing gets missed."
+      "For big tasks, tell Claude to use subagents. They work in parallel and keep your main thread clean.",
+      "Say \"fan out subagents\" and Claude sends a team. Each one digs deep so nothing gets missed."
     ]
   },
   {
     "id": "loop-command-nudge",
     "cooldown": 3,
     "contents": [
-      "Use […] to run any prompt on a schedule. Set it and forget it.",
-      "[…] runs any prompt on a recurring schedule. Great for monitoring deploys, babysitting PRs, or polling status."
+      "Use /loop 5m check the deploy to run any prompt on a schedule. Set it and forget it.",
+      "/loop runs any prompt on a recurring schedule. Great for monitoring deploys, babysitting PRs, or polling status."
     ]
   },
   {
     "id": "guest-passes",
     "cooldown": 3,
     "contents": [
-      "Share Claude Code and earn […] of extra usage · […]",
-      "You have free guest passes to share · […]"
+      "Share Claude Code and earn […] of extra usage · /passes",
+      "You have free guest passes to share · /passes"
     ]
   },
   {

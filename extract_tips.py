@@ -108,10 +108,33 @@ def extract_content(chunk):
     if m: return [decode_js_string(m.group(1)), decode_js_string(m.group(2))]
     return []
 
-def clean_tip(s):
+def collect_bindings(chunk):
+    """Find `let X=$$("suggestion"|"claude",H.theme)("VAL")` style bindings."""
+    bindings = {}
+    for m in re.finditer(r'(?:let|const|var)\s+([A-Za-z_$][A-Za-z_$0-9]*)\s*=\s*\$\$\("(?:suggestion|claude)",\s*[A-Za-z$0-9]+\.theme\)\(\s*"([^"]+)"\s*\)', chunk):
+        bindings[m.group(1)] = m.group(2)
+    return bindings
+
+def clean_tip(s, bindings=None):
+    bindings = bindings or {}
+    # Resolve `${<var>}` from bindings (before other substitutions)
+    def _resolve(m):
+        name = m.group(1)
+        return bindings.get(name, '[…]')
+    s = re.sub(r'\$\{([A-Za-z_$][A-Za-z_$0-9]*)\}', _resolve, s)
+    # Inline styler calls: ${$$("suggestion",H.theme)("X")} → X
     s = re.sub(r'\$\$\("suggestion",\s*[A-Za-z$0-9]+\.theme\)\(`?([^)`]*?)`?\)', r'\1', s)
     s = re.sub(r'\$\$\("claude",\s*[A-Za-z$0-9]+\.theme\)\(`?([^)`]*?)`?\)', r'\1', s)
+    # Link helper: ${Hp("URL","TEXT")} → TEXT
+    s = re.sub(r'\$\{Hp\(\s*"[^"]*"\s*,\s*"([^"]+)"\s*\)\}', r'\1', s)
+    # Variable-referenced styler: ${q("X")} or ${q('X')} or ${q(`X`)} → X
+    # Handle double-quoted inner, single-quoted inner, backtick inner, and nested-quote cases.
+    s = re.sub(r'''\$\{[A-Za-z_$][A-Za-z_$0-9]*\(\s*"((?:[^"\\]|\\.)*)"\s*\)\}''', r'\1', s)
+    s = re.sub(r"""\$\{[A-Za-z_$][A-Za-z_$0-9]*\(\s*'((?:[^'\\]|\\.)*)'\s*\)\}""", r'\1', s)
+    s = re.sub(r'\$\{[A-Za-z_$][A-Za-z_$0-9]*\(\s*`([^`]+)`\s*\)\}', r'\1', s)
+    # Keyboard shortcuts
     s = re.sub(r'\$\{PP\([^)]*\)[^}]*\}', '[shortcut]', s)
+    # Anything else
     s = re.sub(r'\$\{[^{}]*\}', '[…]', s)
     s = s.replace(r'\\n', '\n').replace(r'\n', '\n')
     return s.strip()
@@ -146,7 +169,8 @@ def main():
         id_m = re.search(r'id\s*:\s*"([^"]+)"', ch)
         cd_m = re.search(r'cooldownSessions\s*:\s*(\d+)', ch)
         contents = extract_content(ch)
-        contents = [clean_tip(c) for c in contents if c and len(c.strip()) > 0]
+        bindings = collect_bindings(ch)
+        contents = [clean_tip(c, bindings) for c in contents if c and len(c.strip()) > 0]
         tid = id_m.group(1) if id_m else '?'
         if not contents and tid in MANUAL_FALLBACKS:
             contents = [MANUAL_FALLBACKS[tid]]
