@@ -24,6 +24,8 @@ def main():
             )
         else:
             body = '<em class="dyn">(dynamic — content generated at runtime)</em>'
+        if t.get('condition'):
+            body += f'<br><span class="cond">{html.escape(t["condition"])}</span>'
         rows.append(f'''    <tr>
       <td class="num">{i}</td>
       <td class="id"><code>{tid}</code></td>
@@ -50,6 +52,7 @@ def main():
   td.id code {{ font-size: .85em; color: #444; background: #f4f4f4; padding: .05em .4em; border-radius: 3px; }}
   td.id {{ width: 16em; }}
   .alt {{ color: #999; font-size: .85em; font-style: italic; }}
+  .cond {{ color: #999; font-size: .82em; font-style: italic; display: inline-block; margin-top: .25em; }}
   .dyn {{ color: #aa7; }}
   footer {{ margin-top: 2em; color: #888; font-size: .85em; }}
   code {{ font-family: ui-monospace, Consolas, monospace; }}

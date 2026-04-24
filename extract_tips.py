@@ -151,6 +151,30 @@ def clean_tip(s, bindings=None):
     s = s.replace(r'\\n', '\n').replace(r'\n', '\n')
     return s.strip()
 
+# Contextual tips not stored in the tips array — they're hardcoded in the
+# spinner render path and fire based on session state rather than selection.
+CONTEXTUAL_TIPS = [
+    {
+        'id': 'clear-when-topic-switch',
+        'contents': ['Use /clear to start fresh when switching topics and free up context'],
+        'cooldown': None,
+        'condition': 'shown after session exceeds 30 minutes',
+    },
+    {
+        'id': 'btw-for-side-questions',
+        'contents': ["Use /btw to ask a quick side question without interrupting Claude's current work"],
+        'cooldown': None,
+        'condition': "shown after 30 seconds if /btw hasn't been used yet",
+    },
+]
+
+POST_PROCESS = {
+    # ${Zq.terminal==="vscode"?"code":Zq.terminal} — IDE-family terminals
+    'vscode-command-install': [('[…]', '<your editor>')],
+    # ${q(eYH($))} — formatted referral amount
+    'guest-passes': [('earn […] of', 'earn')],
+}
+
 MANUAL_FALLBACKS = {
     'team-artifacts': '(dynamic) Summary of team artifacts available to Claude',
     'desktop-shortcut': 'Continue your session in Claude Code Desktop with /desktop',
@@ -187,6 +211,9 @@ def main():
         tid = id_m.group(1) if id_m else '?'
         if not contents and tid in MANUAL_FALLBACKS:
             contents = [MANUAL_FALLBACKS[tid]]
+        if tid in POST_PROCESS:
+            for find, replace in POST_PROCESS[tid]:
+                contents = [c.replace(find, replace) for c in contents]
         if debug and any('[…]' in c for c in contents):
             print(f"\n--- UNRESOLVED: {tid} ---", file=sys.stderr)
             print(f"bindings: {bindings}", file=sys.stderr)
@@ -196,6 +223,11 @@ def main():
             'cooldown': int(cd_m.group(1)) if cd_m else None,
             'contents': contents,
         })
+
+    # Append contextual tips if their trigger strings are still present in the bundle
+    for ctx in CONTEXTUAL_TIPS:
+        if any(c in data for c in ctx['contents']):
+            tips.append(ctx)
 
     with open(out_path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(tips, f, indent=2, ensure_ascii=False)
