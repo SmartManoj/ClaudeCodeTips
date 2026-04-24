@@ -38,7 +38,7 @@ jobs:
         run: strings -n 8 "$HOME/.local/bin/claude" > claude_strings.txt
 
       - name: Extract tips
-        run: python extract_tips.py claude_strings.txt tips.json
+        run: python extract_tips.py claude_strings.txt tips.json --debug-unresolved
 
       - name: Render HTML
         run: python generate_html.py "${{ steps.ver.outputs.version }}" tips.json index.html

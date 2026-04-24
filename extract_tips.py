@@ -169,6 +169,7 @@ def main():
         sys.exit(2)
 
     chunks = split_objects(body)
+    debug = '--debug-unresolved' in sys.argv
     tips = []
     for ch in chunks:
         id_m = re.search(r'id\s*:\s*"([^"]+)"', ch)
@@ -179,6 +180,10 @@ def main():
         tid = id_m.group(1) if id_m else '?'
         if not contents and tid in MANUAL_FALLBACKS:
             contents = [MANUAL_FALLBACKS[tid]]
+        if debug and any('[…]' in c for c in contents):
+            print(f"\n--- UNRESOLVED: {tid} ---", file=sys.stderr)
+            print(f"bindings: {bindings}", file=sys.stderr)
+            print(f"raw: {ch}", file=sys.stderr)
         tips.append({
             'id': tid,
             'cooldown': int(cd_m.group(1)) if cd_m else None,
