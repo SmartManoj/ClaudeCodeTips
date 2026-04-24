@@ -52,7 +52,11 @@ jobs:
             echo "No changes."
           else
             git commit -m "Update tips for ${{ steps.ver.outputs.version }}"
-            git push
+            for i in 1 2 3; do
+              git pull --rebase origin main && git push && break
+              echo "Push attempt $i failed; retrying..."
+              sleep 5
+            done
           fi
 
       - name: Upload Pages artifact

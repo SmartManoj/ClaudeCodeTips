@@ -156,8 +156,9 @@ def main():
             'contents': contents,
         })
 
-    with open(out_path, 'w', encoding='utf-8') as f:
+    with open(out_path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(tips, f, indent=2, ensure_ascii=False)
+        f.write('\n')
 
     missing = [t['id'] for t in tips if not t['contents']]
     print(f"Extracted {len(tips)} tips to {out_path}")
