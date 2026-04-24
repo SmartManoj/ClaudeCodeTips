@@ -122,7 +122,12 @@ def clean_tip(s, bindings=None):
         name = m.group(1)
         return bindings.get(name, '[…]')
     s = re.sub(r'\$\{([A-Za-z_$][A-Za-z_$0-9]*)\}', _resolve, s)
-    # Inline styler calls: ${$$("suggestion",H.theme)("X")} → X
+    # Template-wrapped styler calls: ${$$("suggestion",H.theme)("X")} → X
+    s = re.sub(r'\$\{\s*\$\$\("suggestion",\s*[A-Za-z$0-9]+\.theme\)\(\s*"([^"]+)"\s*\)\s*\}', r'\1', s)
+    s = re.sub(r'\$\{\s*\$\$\("claude",\s*[A-Za-z$0-9]+\.theme\)\(\s*"([^"]+)"\s*\)\s*\}', r'\1', s)
+    s = re.sub(r'\$\{\s*\$\$\("suggestion",\s*[A-Za-z$0-9]+\.theme\)\(\s*`([^`]+)`\s*\)\s*\}', r'\1', s)
+    s = re.sub(r'\$\{\s*\$\$\("claude",\s*[A-Za-z$0-9]+\.theme\)\(\s*`([^`]+)`\s*\)\s*\}', r'\1', s)
+    # Bare styler calls: $$("suggestion",H.theme)("X") → X
     s = re.sub(r'\$\$\("suggestion",\s*[A-Za-z$0-9]+\.theme\)\(`?([^)`]*?)`?\)', r'\1', s)
     s = re.sub(r'\$\$\("claude",\s*[A-Za-z$0-9]+\.theme\)\(`?([^)`]*?)`?\)', r'\1', s)
     # Link helper: ${Hp("URL","TEXT")} → TEXT
