@@ -109,9 +109,18 @@ def extract_content(chunk):
     return []
 
 def collect_bindings(chunk):
-    """Find `let X=$$("suggestion"|"claude",H.theme)("VAL")` style bindings."""
+    """Find `let X=<styler>("suggestion"|"claude",H.theme)("VAL")` style bindings.
+
+    The styler function has varied minified names across builds ($$, qq, etc.)
+    so we match any identifier (not a reserved control-flow keyword).
+    """
     bindings = {}
-    for m in re.finditer(r'(?:let|const|var)\s+([A-Za-z_$][A-Za-z_$0-9]*)\s*=\s*\$\$\("(?:suggestion|claude)",\s*[A-Za-z$0-9]+\.theme\)\(\s*"([^"]+)"\s*\)', chunk):
+    pattern = (
+        r'(?:let|const|var)\s+([A-Za-z_$][A-Za-z_$0-9]*)\s*=\s*'
+        r'[A-Za-z_$][A-Za-z_$0-9]*\(\s*"(?:suggestion|claude)"\s*,\s*[A-Za-z_$][A-Za-z_$0-9]*\.theme\s*\)'
+        r'\(\s*"([^"]+)"\s*\)'
+    )
+    for m in re.finditer(pattern, chunk):
         bindings[m.group(1)] = m.group(2)
     return bindings
 
@@ -122,14 +131,12 @@ def clean_tip(s, bindings=None):
         name = m.group(1)
         return bindings.get(name, '[…]')
     s = re.sub(r'\$\{([A-Za-z_$][A-Za-z_$0-9]*)\}', _resolve, s)
-    # Template-wrapped styler calls: ${$$("suggestion",H.theme)("X")} → X
-    s = re.sub(r'\$\{\s*\$\$\("suggestion",\s*[A-Za-z$0-9]+\.theme\)\(\s*"([^"]+)"\s*\)\s*\}', r'\1', s)
-    s = re.sub(r'\$\{\s*\$\$\("claude",\s*[A-Za-z$0-9]+\.theme\)\(\s*"([^"]+)"\s*\)\s*\}', r'\1', s)
-    s = re.sub(r'\$\{\s*\$\$\("suggestion",\s*[A-Za-z$0-9]+\.theme\)\(\s*`([^`]+)`\s*\)\s*\}', r'\1', s)
-    s = re.sub(r'\$\{\s*\$\$\("claude",\s*[A-Za-z$0-9]+\.theme\)\(\s*`([^`]+)`\s*\)\s*\}', r'\1', s)
-    # Bare styler calls: $$("suggestion",H.theme)("X") → X
-    s = re.sub(r'\$\$\("suggestion",\s*[A-Za-z$0-9]+\.theme\)\(`?([^)`]*?)`?\)', r'\1', s)
-    s = re.sub(r'\$\$\("claude",\s*[A-Za-z$0-9]+\.theme\)\(`?([^)`]*?)`?\)', r'\1', s)
+    # Template-wrapped styler calls: ${<styler>("suggestion"|"claude", theme)("X")} → X
+    styler_call = r'[A-Za-z_$][A-Za-z_$0-9]*\(\s*"(?:suggestion|claude)"\s*,\s*[A-Za-z_$][A-Za-z_$0-9]*\.theme\s*\)'
+    s = re.sub(r'\$\{\s*' + styler_call + r'\(\s*"([^"]+)"\s*\)\s*\}', r'\1', s)
+    s = re.sub(r'\$\{\s*' + styler_call + r'\(\s*`([^`]+)`\s*\)\s*\}', r'\1', s)
+    # Bare styler calls: <styler>("suggestion"|"claude", theme)("X") → X
+    s = re.sub(styler_call + r'\(`?([^)`]*?)`?\)', r'\1', s)
     # Link helper: ${Hp("URL","TEXT")} → TEXT
     s = re.sub(r'\$\{Hp\(\s*"[^"]*"\s*,\s*"([^"]+)"\s*\)\}', r'\1', s)
     # Variable-referenced styler: ${q("X")} or ${q('X')} or ${q(`X`)} → X
