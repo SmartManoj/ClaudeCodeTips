@@ -144,8 +144,10 @@ def clean_tip(s, bindings=None):
     s = re.sub(r'''\$\{[A-Za-z_$][A-Za-z_$0-9]*\(\s*"((?:[^"\\]|\\.)*)"\s*\)\}''', r'\1', s)
     s = re.sub(r"""\$\{[A-Za-z_$][A-Za-z_$0-9]*\(\s*'((?:[^'\\]|\\.)*)'\s*\)\}""", r'\1', s)
     s = re.sub(r'\$\{[A-Za-z_$][A-Za-z_$0-9]*\(\s*`([^`]+)`\s*\)\}', r'\1', s)
-    # Keyboard shortcuts
-    s = re.sub(r'\$\{PP\([^)]*\)[^}]*\}', '[shortcut]', s)
+    # Keyboard shortcuts: ${<PP>("chat:action","Chat","keybinding")} → keybinding
+    s = re.sub(
+        r'\$\{[A-Za-z_$][A-Za-z_$0-9]*\(\s*"[^"]+"\s*,\s*"[^"]*"\s*,\s*"([^"]+)"\s*\)\}',
+        r'\1', s)
     # Anything else
     s = re.sub(r'\$\{[^{}]*\}', '[…]', s)
     s = s.replace(r'\\n', '\n').replace(r'\n', '\n')
