@@ -1,0 +1,71 @@
+name: Update tips
+
+on:
+  schedule:
+    - cron: '17 6 * * *'  # daily at 06:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Claude Code
+        run: |
+          curl -fsSL https://claude.ai/install.sh | bash
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Record version
+        id: ver
+        run: |
+          V=$("$HOME/.local/bin/claude" --version)
+          echo "version=$V" >> $GITHUB_OUTPUT
+          echo "Claude Code version: $V"
+
+      - name: Extract strings from binary
+        run: strings -n 8 "$HOME/.local/bin/claude" > claude_strings.txt
+
+      - name: Extract tips
+        run: python extract_tips.py claude_strings.txt tips.json
+
+      - name: Render HTML
+        run: python generate_html.py "${{ steps.ver.outputs.version }}" tips.json index.html
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tips.json index.html
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Update tips for ${{ steps.ver.outputs.version }}"
+            git push
+          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
