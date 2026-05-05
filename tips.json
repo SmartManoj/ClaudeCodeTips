@@ -3,7 +3,8 @@
     "id": "team-artifacts",
     "cooldown": 1,
     "contents": [
-      "(dynamic) Summary of team artifacts available to Claude"
+      "is_relevant_timeout",
+      "is_relevant_error"
     ]
   },
   {
