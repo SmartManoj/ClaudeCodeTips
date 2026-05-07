@@ -280,7 +280,7 @@
     "id": "no-flicker",
     "cooldown": 10,
     "contents": [
-      "Try flicker-free rendering, now with mouse support · /tui fullscreen"
+      "Try smoother rendering, lower memory usage, mouse support, and better formatting of copied text · /tui fullscreen"
     ]
   },
   {
@@ -334,13 +334,6 @@
     "contents": [
       "Share Claude Code and earn extra usage · /passes",
       "You have free guest passes to share · /passes"
-    ]
-  },
-  {
-    "id": "overage-credit",
-    "cooldown": 3,
-    "contents": [
-      "<amount> in extra usage, on us · third-party apps · /extra-usage"
     ]
   },
   {
