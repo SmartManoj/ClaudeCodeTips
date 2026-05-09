@@ -305,43 +305,2757 @@
     ]
   },
   {
-    "id": "effort-high-nudge",
+    "id": "stripe-plugin",
     "cooldown": 3,
-    "contents": [
-      "Use /effort high for better one-shot answers. Claude thinks it through first.",
-      "Working on something tricky? /effort high gives better first answers"
-    ]
-  },
-  {
-    "id": "subagent-fanout-nudge",
-    "cooldown": 3,
-    "contents": [
-      "For big tasks, tell Claude to use subagents. They work in parallel and keep your main thread clean.",
-      "Say \"fan out subagents\" and Claude sends a team. Each one digs deep so nothing gets missed."
-    ]
-  },
-  {
-    "id": "loop-command-nudge",
-    "cooldown": 3,
-    "contents": [
-      "Use /loop 5m check the deploy to run any prompt on a schedule. Set it and forget it.",
-      "/loop runs any prompt on a recurring schedule. Great for monitoring deploys, babysitting PRs, or polling status."
-    ]
-  },
-  {
-    "id": "guest-passes",
-    "cooldown": 3,
-    "contents": [
-      "Share Claude Code and earn extra usage · /passes",
-      "You have free guest passes to share · /passes"
-    ]
-  },
-  {
-    "id": "feedback-command",
-    "cooldown": 15,
     "contents": [
       "Use /feedback to help us improve!"
     ]
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "preflight",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": [
+      "plugin:[…]@[…]",
+      "server:[…]"
+    ]
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "...",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": [
+      "Error: No deferred tool marker found in the resumed session. Either the session was not deferred, the marker is stale (tool already ran), or it exceeds the tail-scan window. Provide a prompt to continue the conversation.",
+      "Error: Input must be provided either through stdin or as a prompt argument when using --print"
+    ]
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
   },
   {
     "id": "clear-when-topic-switch",
