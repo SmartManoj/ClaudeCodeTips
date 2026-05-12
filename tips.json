@@ -8,6 +8,11 @@
     ]
   },
   {
+    "id": "powerup-onboarding",
+    "cooldown": 1,
+    "contents": []
+  },
+  {
     "id": "new-user-warmup",
     "cooldown": 3,
     "contents": [
@@ -284,6 +289,11 @@
     ]
   },
   {
+    "id": "console-api-key",
+    "cooldown": 15,
+    "contents": []
+  },
+  {
     "id": "opusplan-mode-reminder",
     "cooldown": 2,
     "contents": [
@@ -310,6 +320,11 @@
     "contents": [
       "Use /feedback to help us improve!"
     ]
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
   },
   {
     "id": "?",
@@ -868,11 +883,6 @@
       "plugin:[…]@[…]",
       "server:[…]"
     ]
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
   },
   {
     "id": "?",
@@ -2212,10 +2222,45 @@
   {
     "id": "?",
     "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
     "contents": [
       "Error: No deferred tool marker found in the resumed session. Either the session was not deferred, the marker is stale (tool already ran), or it exceeds the tail-scan window. Provide a prompt to continue the conversation.",
       "Error: Input must be provided either through stdin or as a prompt argument when using --print"
     ]
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
   },
   {
     "id": "?",
