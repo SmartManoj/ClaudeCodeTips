@@ -3,8 +3,8 @@
     "id": "team-artifacts",
     "cooldown": 1,
     "contents": [
-      "is_relevant_timeout",
-      "is_relevant_error"
+      "content_scan_error",
+      "content_unknown_error"
     ]
   },
   {
@@ -1611,6 +1611,101 @@
   },
   {
     "id": "...",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
     "cooldown": null,
     "contents": []
   },
