@@ -254,6 +254,11 @@
     ]
   },
   {
+    "id": "desktop-contextual",
+    "cooldown": 15,
+    "contents": []
+  },
+  {
     "id": "web-app",
     "cooldown": 15,
     "contents": [
@@ -320,6 +325,11 @@
     "contents": [
       "Use /feedback to help us improve!"
     ]
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
   },
   {
     "id": "?",
@@ -883,41 +893,6 @@
       "plugin:[…]@[…]",
       "server:[…]"
     ]
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
   },
   {
     "id": "?",
