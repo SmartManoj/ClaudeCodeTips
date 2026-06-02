@@ -307,6 +307,27 @@
     "contents": []
   },
   {
+    "id": "c4e-desktop",
+    "cooldown": 15,
+    "contents": [
+      "Run Claude Code locally or remotely using the Claude desktop app — […]"
+    ]
+  },
+  {
+    "id": "c4e-remote-sessions",
+    "cooldown": 15,
+    "contents": [
+      "Run tasks in the cloud while you keep coding locally — […]"
+    ]
+  },
+  {
+    "id": "c4e-ultrareview",
+    "cooldown": 15,
+    "contents": [
+      "/ultrareview runs a deep, multi-agent review of your changes — […]"
+    ]
+  },
+  {
     "id": "opusplan-mode-reminder",
     "cooldown": 2,
     "contents": [
