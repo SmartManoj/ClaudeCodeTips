@@ -16,6 +16,14 @@
     ]
   },
   {
+    "id": "fotw-campaign-upsell",
+    "cooldown": 1,
+    "contents": [
+      "/[…] […]",
+      "/[…]"
+    ]
+  },
+  {
     "id": "powerup-onboarding",
     "cooldown": 1,
     "contents": []
@@ -61,6 +69,13 @@
     "contents": [
       "Run /terminal-setup to enable convenient terminal integration like Option + Enter for new line and more",
       "Run /terminal-setup to enable convenient terminal integration like Shift + Enter for new line and more"
+    ]
+  },
+  {
+    "id": "vscode-gpu-accel-garbled-glyphs",
+    "cooldown": 8,
+    "contents": [
+      "Corrupted terminal glyphs? Disable terminal GPU acceleration in settings or run /terminal-setup"
     ]
   },
   {
@@ -354,6 +369,31 @@
     "contents": [
       "Use /feedback to help us improve!"
     ]
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
   },
   {
     "id": "?",
