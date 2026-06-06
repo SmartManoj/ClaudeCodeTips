@@ -313,7 +313,7 @@
     "id": "no-flicker",
     "cooldown": 10,
     "contents": [
-      "Try smoother rendering, lower memory usage, mouse support, and better formatting of copied text · /tui fullscreen"
+      "Try the new fullscreen renderer — flicker-free output, mouse support, auto-copy on select · /tui fullscreen"
     ]
   },
   {
@@ -369,6 +369,56 @@
     "contents": [
       "Use /feedback to help us improve!"
     ]
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
   },
   {
     "id": "?",
