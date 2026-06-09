@@ -64,6 +64,11 @@
     ]
   },
   {
+    "id": "agents-view-multiclauding",
+    "cooldown": 1,
+    "contents": []
+  },
+  {
     "id": "terminal-setup",
     "cooldown": 10,
     "contents": [
@@ -282,6 +287,11 @@
     "contents": []
   },
   {
+    "id": "claude-design-contextual",
+    "cooldown": 15,
+    "contents": []
+  },
+  {
     "id": "web-app",
     "cooldown": 15,
     "contents": [
@@ -357,312 +367,38 @@
     ]
   },
   {
-    "id": "vercel-plugin",
+    "id": "subagent-fanout-nudge",
+    "cooldown": 3,
+    "contents": []
+  },
+  {
+    "id": "loop-command-nudge",
+    "cooldown": 3,
+    "contents": []
+  },
+  {
+    "id": "goal-command-nudge",
+    "cooldown": 3,
+    "contents": []
+  },
+  {
+    "id": "guest-passes",
     "cooldown": 3,
     "contents": [
-      "Working with Vercel? Install the vercel plugin: /plugin install vercel@<version>"
+      "Share Claude Code and earn […] in usage credits · /passes",
+      "You have free guest passes to share · /passes"
     ]
   },
   {
-    "id": "stripe-plugin",
-    "cooldown": 3,
+    "id": "feedback-command",
+    "cooldown": 15,
     "contents": [
       "Use /feedback to help us improve!"
     ]
   },
   {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
-    "id": "?",
-    "cooldown": null,
+    "id": "team-onboarding-share",
+    "cooldown": 5,
     "contents": []
   },
   {
