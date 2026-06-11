@@ -377,6 +377,11 @@
     "contents": []
   },
   {
+    "id": "plugin-disuse-review",
+    "cooldown": 30,
+    "contents": []
+  },
+  {
     "id": "goal-command-nudge",
     "cooldown": 3,
     "contents": []
