@@ -26,7 +26,9 @@
   {
     "id": "powerup-onboarding",
     "cooldown": 1,
-    "contents": []
+    "contents": [
+      "New to Claude Code? Run /powerup for a quick interactive tutorial"
+    ]
   },
   {
     "id": "new-user-warmup",
@@ -289,7 +291,9 @@
   {
     "id": "claude-design-contextual",
     "cooldown": 15,
-    "contents": []
+    "contents": [
+      "Use Claude Design to mock up screens before you build · ${CB(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
+    ]
   },
   {
     "id": "web-app",
@@ -329,7 +333,9 @@
   {
     "id": "console-api-key",
     "cooldown": 15,
-    "contents": []
+    "contents": [
+      "Build your AI product with Claude API. Run /claude-api to get started"
+    ]
   },
   {
     "id": "c4e-desktop",
@@ -363,18 +369,22 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin: /plugin install frontend-design@<version>"
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${Fo(\"suggestion\",e.theme)("
     ]
   },
   {
     "id": "subagent-fanout-nudge",
     "cooldown": 3,
-    "contents": []
+    "contents": [
+      "Say […] and Claude sends a team. Each one digs deep so nothing gets missed."
+    ]
   },
   {
     "id": "loop-command-nudge",
     "cooldown": 3,
-    "contents": []
+    "contents": [
+      "/loop runs any prompt on a recurring schedule. Great for monitoring deploys, babysitting PRs, or polling status."
+    ]
   },
   {
     "id": "plugin-disuse-review",
@@ -384,7 +394,9 @@
   {
     "id": "goal-command-nudge",
     "cooldown": 3,
-    "contents": []
+    "contents": [
+      "Set an objective with /goal — Claude keeps working until it's met"
+    ]
   },
   {
     "id": "guest-passes",
@@ -404,7 +416,9 @@
   {
     "id": "team-onboarding-share",
     "cooldown": 5,
-    "contents": []
+    "contents": [
+      "Run /team-onboarding to turn your Claude usage into an onboarding guide — share it with your team in one link"
+    ]
   },
   {
     "id": "clear-when-topic-switch",
