@@ -292,7 +292,7 @@
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${PB(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
+      "Use Claude Design to mock up screens before you build · ${kR(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
     ]
   },
   {
@@ -369,7 +369,7 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin:\n${Oo(\"suggestion\",e.theme)("
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${To(\"suggestion\",e.theme)("
     ]
   },
   {
@@ -377,6 +377,13 @@
     "cooldown": 3,
     "contents": [
       "Say […] and Claude sends a team. Each one digs deep so nothing gets missed."
+    ]
+  },
+  {
+    "id": "dynamic-workflows",
+    "cooldown": 3,
+    "contents": [
+      "Dynamic workflows let Claude write a script that orchestrates many agents for you. Mention the keyword ultracode or ask Claude to use a workflow directly."
     ]
   },
   {
