@@ -68,7 +68,9 @@
   {
     "id": "agents-view-multiclauding",
     "cooldown": 1,
-    "contents": []
+    "contents": [
+      "Running multiple Claude sessions? Press […] on an empty prompt to see them all in one place"
+    ]
   },
   {
     "id": "terminal-setup",
@@ -292,7 +294,7 @@
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${sP(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
+      "Use Claude Design to mock up screens before you build · ${TP(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
     ]
   },
   {
@@ -369,7 +371,7 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin:\n${Io(\"suggestion\",e.theme)("
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${ko(\"suggestion\",e.theme)("
     ]
   },
   {
