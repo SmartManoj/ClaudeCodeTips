@@ -294,7 +294,14 @@
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${EP(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
+      "Use Claude Design to mock up screens before you build · ${$P(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
+    ]
+  },
+  {
+    "id": "artifact-publish-plan",
+    "cooldown": 5,
+    "contents": [
+      "Working on a plan or design doc? Ask Claude to publish it as an artifact — a polished web page you can open in your browser."
     ]
   },
   {
@@ -371,7 +378,7 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin:\n${Io(\"suggestion\",e.theme)("
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${xo(\"suggestion\",e.theme)("
     ]
   },
   {
