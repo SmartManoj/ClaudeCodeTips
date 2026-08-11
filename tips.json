@@ -188,6 +188,13 @@
     ]
   },
   {
+    "id": "install-slack-app-mcp",
+    "cooldown": 10,
+    "contents": [
+      "Using a Slack MCP? With Claude Tag you can @Claude directly in Slack — run /install-slack-app or share claude.com/product/tag with your org owner"
+    ]
+  },
+  {
     "id": "permissions",
     "cooldown": 10,
     "contents": [
@@ -294,7 +301,7 @@
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${AU(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
+      "Use Claude Design to mock up screens before you build · ${Bj(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
     ]
   },
   {
@@ -302,6 +309,13 @@
     "cooldown": 5,
     "contents": [
       "Working on a plan or design doc? Ask Claude to publish it as an artifact — a polished web page you can open in your browser."
+    ]
+  },
+  {
+    "id": "artifact-duplicate",
+    "cooldown": 5,
+    "contents": [
+      "See an artifact you'd like to build on? Duplicate, in its title menu, gives you your own editable copy."
     ]
   },
   {
@@ -388,7 +402,7 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin:\n${Eo(\"suggestion\",e.theme)("
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${To(\"suggestion\",e.theme)("
     ]
   },
   {
