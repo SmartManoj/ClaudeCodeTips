@@ -253,22 +253,13 @@
   {
     "id": "shift-tab",
     "cooldown": 10,
-    "contents": [
-      "Hit shift+tab to cycle between manual mode, auto-accept edit mode, and plan mode"
-    ]
+    "contents": []
   },
   {
     "id": "image-paste",
     "cooldown": 20,
     "contents": [
       "Use ctrl+v to paste images from your clipboard"
-    ]
-  },
-  {
-    "id": "custom-agents",
-    "cooldown": 15,
-    "contents": [
-      "Ask Claude to create subagents for specific tasks. Eg. Software Architect, Code Writer, Code Reviewer"
     ]
   },
   {
@@ -301,7 +292,7 @@
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${Lz(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
+      "Use Claude Design to mock up screens before you build · ${F4(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
     ]
   },
   {
@@ -402,7 +393,7 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin:\n${Do(\"suggestion\",e.theme)("
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${Bo(\"suggestion\",e.theme)("
     ]
   },
   {
@@ -433,7 +424,7 @@
     "id": "loop-command-nudge",
     "cooldown": 3,
     "contents": [
-      "/loop runs any prompt on a recurring schedule. Great for monitoring deploys, babysitting PRs, or polling status."
+      "${Bo(\"suggestion\",e.theme)("
     ]
   },
   {
