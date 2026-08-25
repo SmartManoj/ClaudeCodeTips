@@ -292,7 +292,7 @@
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${rz(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
+      "Use Claude Design to mock up screens before you build · ${C(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
     ]
   },
   {
@@ -321,6 +321,13 @@
     "cooldown": 15,
     "contents": [
       "Run tasks in the cloud while you keep coding locally · clau.de/web"
+    ]
+  },
+  {
+    "id": "web-setup-github",
+    "cooldown": null,
+    "contents": [
+      "Run /web-setup to use Claude Code on the web with the GitHub account gh is signed in to"
     ]
   },
   {
@@ -400,7 +407,7 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin:\n${ri(\"suggestion\",e.theme)("
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${l(\"suggestion\",e.theme)("
     ]
   },
   {
@@ -431,7 +438,7 @@
     "id": "loop-command-nudge",
     "cooldown": 3,
     "contents": [
-      "${ri(\"suggestion\",e.theme)("
+      "${l(\"suggestion\",e.theme)("
     ]
   },
   {
