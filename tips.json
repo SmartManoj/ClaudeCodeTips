@@ -289,10 +289,15 @@
     "contents": []
   },
   {
+    "id": "?",
+    "cooldown": null,
+    "contents": []
+  },
+  {
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${Jg(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:P.theme})}"
+      "Use Claude Design to mock up screens before you build · ${hh(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:w.theme})}"
     ]
   },
   {
@@ -407,7 +412,7 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin:\n${ut(\"suggestion\",P.theme)("
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${dt(\"suggestion\",w.theme)("
     ]
   },
   {
@@ -438,7 +443,7 @@
     "id": "loop-command-nudge",
     "cooldown": 3,
     "contents": [
-      "${ut(\"suggestion\",P.theme)("
+      "${dt(\"suggestion\",w.theme)("
     ]
   },
   {
