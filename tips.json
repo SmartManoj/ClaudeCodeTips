@@ -297,7 +297,7 @@
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${hh(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:w.theme})}"
+      "Use Claude Design to mock up screens before you build · ${Ah(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:w.theme})}"
     ]
   },
   {
