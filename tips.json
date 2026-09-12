@@ -297,7 +297,7 @@
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${Oh(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:w.theme})}"
+      "Use Claude Design to mock up screens before you build · ${Fh(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:w.theme})}"
     ]
   },
   {
@@ -369,6 +369,13 @@
     ]
   },
   {
+    "id": "focus-view",
+    "cooldown": 15,
+    "contents": [
+      "Use /focus to see just your prompt, a one-line summary of the work, and the response"
+    ]
+  },
+  {
     "id": "console-api-key",
     "cooldown": 15,
     "contents": [
@@ -412,7 +419,7 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin:\n${ft(\"suggestion\",w.theme)("
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${mt(\"suggestion\",w.theme)("
     ]
   },
   {
@@ -443,7 +450,7 @@
     "id": "loop-command-nudge",
     "cooldown": 3,
     "contents": [
-      "${ft(\"suggestion\",w.theme)("
+      "${mt(\"suggestion\",w.theme)("
     ]
   },
   {
