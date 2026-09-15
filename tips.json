@@ -273,7 +273,14 @@
     "id": "desktop-app",
     "cooldown": 15,
     "contents": [
-      "Run Claude Code locally or remotely using the Claude desktop app: clau.de/desktop"
+      "Run Claude Code locally or remotely using the Claude desktop app · run /desktop"
+    ]
+  },
+  {
+    "id": "desktop-third-party",
+    "cooldown": 15,
+    "contents": [
+      "Run Claude Code in the Claude desktop app with your cloud provider or LLM gateway · ${Kh(\"https://clau.de/desktop-3p\",\"clau.de/desktop-3p\",{themeName:w.theme})}"
     ]
   },
   {
@@ -289,15 +296,10 @@
     "contents": []
   },
   {
-    "id": "?",
-    "cooldown": null,
-    "contents": []
-  },
-  {
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${Fh(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:w.theme})}"
+      "Use Claude Design to mock up screens before you build · ${Kh(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:w.theme})}"
     ]
   },
   {
