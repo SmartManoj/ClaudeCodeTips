@@ -273,7 +273,7 @@
     "id": "desktop-third-party",
     "cooldown": 15,
     "contents": [
-      "Run Claude Code in the Claude desktop app with your cloud provider or LLM gateway · ${zy(\"https://clau.de/desktop-3p\",\"clau.de/desktop-3p\",{themeName:e.theme})}"
+      "Run Claude Code in the Claude desktop app with your cloud provider or LLM gateway · ${p_(\"https://clau.de/desktop-3p\",\"clau.de/desktop-3p\",{themeName:e.theme})}"
     ]
   },
   {
@@ -289,10 +289,17 @@
     "contents": []
   },
   {
+    "id": "?",
+    "cooldown": null,
+    "contents": [
+      "In Claude Code Desktop, each session gets its own iOS Simulator pane, where Claude tests your app, fixes what it finds, and checks again. · run /desktop"
+    ]
+  },
+  {
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${zy(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
+      "Use Claude Design to mock up screens before you build · ${p_(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
     ]
   },
   {
@@ -414,7 +421,7 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin:\n${Et(\"suggestion\",e.theme)("
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${kn(\"suggestion\",e.theme)("
     ]
   },
   {
@@ -445,7 +452,7 @@
     "id": "loop-command-nudge",
     "cooldown": 3,
     "contents": [
-      "${Et(\"suggestion\",e.theme)("
+      "${kn(\"suggestion\",e.theme)("
     ]
   },
   {
