@@ -421,7 +421,7 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin:\n${In(\"suggestion\",e.theme)("
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${xn(\"suggestion\",e.theme)("
     ]
   },
   {
@@ -445,7 +445,7 @@
     "id": "loop-command-nudge",
     "cooldown": 3,
     "contents": [
-      "${In(\"suggestion\",e.theme)("
+      "${xn(\"suggestion\",e.theme)("
     ]
   },
   {
