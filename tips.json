@@ -40,9 +40,7 @@
   {
     "id": "plan-mode-for-complex-tasks",
     "cooldown": 5,
-    "contents": [
-      "Use Plan Mode to prepare for a complex request before making changes. Press shift+tab twice to enable."
-    ]
+    "contents": []
   },
   {
     "id": "default-permission-mode-config",
@@ -54,9 +52,7 @@
   {
     "id": "git-worktrees",
     "cooldown": 10,
-    "contents": [
-      "Use git worktrees to run multiple Claude sessions in parallel."
-    ]
+    "contents": []
   },
   {
     "id": "color-when-multi-clauding",
@@ -68,9 +64,7 @@
   {
     "id": "agents-view-multiclauding",
     "cooldown": 1,
-    "contents": [
-      "Running multiple Claude sessions? Press […] on an empty prompt to see them all in one place"
-    ]
+    "contents": []
   },
   {
     "id": "terminal-setup",
@@ -106,9 +100,7 @@
   {
     "id": "memory-command",
     "cooldown": 15,
-    "contents": [
-      "Use /memory to view and manage Claude memory"
-    ]
+    "contents": []
   },
   {
     "id": "theme-command",
@@ -134,9 +126,7 @@
   {
     "id": "status-line",
     "cooldown": 25,
-    "contents": [
-      "Use /statusline to set up a custom status line that will display beneath the input box"
-    ]
+    "contents": []
   },
   {
     "id": "prompt-queue",
@@ -169,16 +159,12 @@
   {
     "id": "install-github-app",
     "cooldown": 10,
-    "contents": [
-      "Run /install-github-app to tag @claude right from your Github issues and PRs"
-    ]
+    "contents": []
   },
   {
     "id": "install-slack-app",
     "cooldown": 10,
-    "contents": [
-      "Run /install-slack-app to use Claude in Slack"
-    ]
+    "contents": []
   },
   {
     "id": "install-slack-app-mcp",
@@ -190,9 +176,7 @@
   {
     "id": "permissions",
     "cooldown": 10,
-    "contents": [
-      "Use /permissions to pre-approve and pre-deny bash, edit, and MCP tools"
-    ]
+    "contents": []
   },
   {
     "id": "drag-and-drop-images",
@@ -218,9 +202,7 @@
   {
     "id": "double-esc-code-restore",
     "cooldown": 10,
-    "contents": [
-      "Double-tap esc to rewind the code and/or conversation to a previous point in time"
-    ]
+    "contents": []
   },
   {
     "id": "continue",
@@ -239,9 +221,7 @@
   {
     "id": "custom-commands",
     "cooldown": 15,
-    "contents": [
-      "Create skills by adding .md files to .claude/skills/ in your project or ~/.claude/skills/ for skills that work in any project"
-    ]
+    "contents": []
   },
   {
     "id": "shift-tab",
@@ -259,15 +239,13 @@
     "id": "effort-step-keys",
     "cooldown": 10,
     "contents": [
-      "Press ${w(\"chat:increaseEffort\")??"
+      "Press ${R(\"chat:increaseEffort\")??"
     ]
   },
   {
     "id": "agent-flag",
     "cooldown": 15,
-    "contents": [
-      "Use --agent <agent_name> to directly start a conversation with a subagent"
-    ]
+    "contents": []
   },
   {
     "id": "desktop-app",
@@ -280,7 +258,7 @@
     "id": "desktop-third-party",
     "cooldown": 15,
     "contents": [
-      "Run Claude Code in the Claude desktop app with your cloud provider or LLM gateway · ${fv(\"https://clau.de/desktop-3p\",\"clau.de/desktop-3p\",{themeName:e.theme})}"
+      "Run Claude Code in the Claude desktop app with your cloud provider or LLM gateway · ${GS(\"https://clau.de/desktop-3p\",\"clau.de/desktop-3p\",{themeName:e.theme})}"
     ]
   },
   {
@@ -306,7 +284,7 @@
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${fv(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
+      "Use Claude Design to mock up screens before you build · ${GS(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
     ]
   },
   {
@@ -431,7 +409,7 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin:\n${rr(\"suggestion\",e.theme)("
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${nr(\"suggestion\",e.theme)("
     ]
   },
   {
@@ -455,15 +433,13 @@
     "id": "loop-command-nudge",
     "cooldown": 3,
     "contents": [
-      "${rr(\"suggestion\",e.theme)("
+      "${nr(\"suggestion\",e.theme)("
     ]
   },
   {
     "id": "code-review-low-fast",
     "cooldown": 8,
-    "contents": [
-      "For a fast, cheap code review, try /code-review low. It runs the built-in skill at its lightest effort level."
-    ]
+    "contents": []
   },
   {
     "id": "plugin-disuse-review",
@@ -473,9 +449,7 @@
   {
     "id": "goal-command-nudge",
     "cooldown": 3,
-    "contents": [
-      "Set an objective with /goal — Claude keeps working until it's met"
-    ]
+    "contents": []
   },
   {
     "id": "guest-passes",
