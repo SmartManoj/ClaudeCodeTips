@@ -258,7 +258,7 @@
     "id": "desktop-third-party",
     "cooldown": 15,
     "contents": [
-      "Run Claude Code in the Claude desktop app with your cloud provider or LLM gateway · ${uS(\"https://clau.de/desktop-3p\",\"clau.de/desktop-3p\",{themeName:e.theme})}"
+      "Run Claude Code in the Claude desktop app with your cloud provider or LLM gateway · ${vS(\"https://clau.de/desktop-3p\",\"clau.de/desktop-3p\",{themeName:e.theme})}"
     ]
   },
   {
@@ -284,7 +284,7 @@
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${uS(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
+      "Use Claude Design to mock up screens before you build · ${vS(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
     ]
   },
   {
@@ -366,13 +366,6 @@
     "contents": []
   },
   {
-    "id": "console-api-key",
-    "cooldown": 15,
-    "contents": [
-      "Build your AI product with Claude API. Run /claude-api to get started"
-    ]
-  },
-  {
     "id": "c4e-desktop",
     "cooldown": 15,
     "contents": [
@@ -409,7 +402,7 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin:\n${ar(\"suggestion\",e.theme)("
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${lr(\"suggestion\",e.theme)("
     ]
   },
   {
@@ -438,7 +431,7 @@
     "id": "loop-command-nudge",
     "cooldown": 3,
     "contents": [
-      "${ar(\"suggestion\",e.theme)("
+      "${lr(\"suggestion\",e.theme)("
     ]
   },
   {
