@@ -82,6 +82,13 @@
     ]
   },
   {
+    "id": "vscode-notebook-rerun-edited-cell",
+    "cooldown": 8,
+    "contents": [
+      "Claude edits notebook files, not your kernel. To get a cleared output back, re-run its cell and the cells that depend on it."
+    ]
+  },
+  {
     "id": "shift-enter",
     "cooldown": 10,
     "contents": [
@@ -239,7 +246,7 @@
     "id": "effort-step-keys",
     "cooldown": 10,
     "contents": [
-      "Press ${R(\"chat:increaseEffort\")??"
+      "Press ${A(\"chat:increaseEffort\")??"
     ]
   },
   {
@@ -258,7 +265,7 @@
     "id": "desktop-third-party",
     "cooldown": 15,
     "contents": [
-      "Run Claude Code in the Claude desktop app with your cloud provider or LLM gateway · ${aw(\"https://clau.de/desktop-3p\",\"clau.de/desktop-3p\",{themeName:e.theme})}"
+      "Run Claude Code in the Claude desktop app with your cloud provider or LLM gateway · ${Cw(\"https://clau.de/desktop-3p\",\"clau.de/desktop-3p\",{themeName:e.theme})}"
     ]
   },
   {
@@ -284,7 +291,7 @@
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${aw(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
+      "Use Claude Design to mock up screens before you build · ${Cw(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
     ]
   },
   {
@@ -402,7 +409,7 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin:\n${Tr(\"suggestion\",e.theme)("
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${Dr(\"suggestion\",e.theme)("
     ]
   },
   {
@@ -431,7 +438,7 @@
     "id": "loop-command-nudge",
     "cooldown": 3,
     "contents": [
-      "${Tr(\"suggestion\",e.theme)("
+      "${Dr(\"suggestion\",e.theme)("
     ]
   },
   {
