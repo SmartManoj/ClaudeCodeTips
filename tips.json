@@ -34,7 +34,7 @@
     "id": "new-user-warmup",
     "cooldown": 3,
     "contents": [
-      "Start with small features or bug fixes, tell Claude to propose a plan, and verify its suggested edits"
+      "Start small, ask Claude for a plan, and check its edits"
     ]
   },
   {
@@ -58,7 +58,7 @@
     "id": "color-when-multi-clauding",
     "cooldown": 10,
     "contents": [
-      "Running multiple Claude sessions? Use /color and /rename to tell them apart at a glance."
+      "Use /color and /rename to tell your sessions apart"
     ]
   },
   {
@@ -67,18 +67,10 @@
     "contents": []
   },
   {
-    "id": "terminal-setup",
-    "cooldown": 10,
-    "contents": [
-      "Run /terminal-setup to enable convenient terminal integration like Option + Enter for new line and more",
-      "Run /terminal-setup to enable convenient terminal integration like Shift + Enter for new line and more"
-    ]
-  },
-  {
     "id": "vscode-gpu-accel-garbled-glyphs",
     "cooldown": 8,
     "contents": [
-      "Corrupted terminal glyphs? Disable terminal GPU acceleration in settings or run /terminal-setup"
+      "Garbled characters? Turn off terminal GPU acceleration in settings or run /terminal-setup"
     ]
   },
   {
@@ -100,8 +92,8 @@
     "id": "shift-enter-setup",
     "cooldown": 10,
     "contents": [
-      "Run /terminal-setup to enable Option+Enter for new lines",
-      "Run /terminal-setup to enable Shift+Enter for new lines"
+      "Run /terminal-setup to use Option+Enter for new lines",
+      "Run /terminal-setup to use Shift+Enter for new lines"
     ]
   },
   {
@@ -120,14 +112,14 @@
     "id": "colorterm-truecolor",
     "cooldown": 30,
     "contents": [
-      "Try setting environment variable COLORTERM=truecolor for richer colors"
+      "Set COLORTERM=truecolor for richer colors"
     ]
   },
   {
     "id": "powershell-tool-env",
     "cooldown": 10,
     "contents": [
-      "Set CLAUDE_CODE_USE_POWERSHELL_TOOL=1 to enable the PowerShell tool (preview)"
+      "Set CLAUDE_CODE_USE_POWERSHELL_TOOL=1 to turn on the PowerShell tool (preview)"
     ]
   },
   {
@@ -139,21 +131,21 @@
     "id": "prompt-queue",
     "cooldown": 5,
     "contents": [
-      "Hit Enter to queue up additional messages while Claude is working."
+      "Press Enter to queue messages while Claude works"
     ]
   },
   {
     "id": "enter-to-steer-in-relatime",
     "cooldown": 20,
     "contents": [
-      "Send messages to Claude while it works to steer Claude in real-time"
+      "Send a message mid-task to steer Claude"
     ]
   },
   {
     "id": "vscode-command-install",
     "cooldown": 0,
     "contents": [
-      "Open the Command Palette (Cmd+Shift+P) and run \"Shell Command: Install '<your editor>' command in PATH\" to enable IDE integration"
+      "Open the Command Palette (Cmd+Shift+P) and run \"Shell Command: Install '<your editor>' command in PATH\" to connect your IDE"
     ]
   },
   {
@@ -177,7 +169,7 @@
     "id": "install-slack-app-mcp",
     "cooldown": 10,
     "contents": [
-      "Using a Slack MCP? With Claude Tag you can @Claude directly in Slack — run /install-slack-app or share claude.com/product/tag with your org owner"
+      "@Claude in Slack with Claude Tag · run /install-slack-app or share claude.com/product/tag with your organization's owner"
     ]
   },
   {
@@ -189,7 +181,7 @@
     "id": "drag-and-drop-images",
     "cooldown": 10,
     "contents": [
-      "Did you know you can drag and drop image files into your terminal?"
+      "Drag and drop images into your terminal"
     ]
   },
   {
@@ -215,14 +207,14 @@
     "id": "continue",
     "cooldown": 10,
     "contents": [
-      "Run claude --continue or claude --resume to resume a conversation"
+      "Run claude --continue or claude --resume to resume a session"
     ]
   },
   {
     "id": "rename-conversation",
     "cooldown": 15,
     "contents": [
-      "Name your conversations with /rename to find them easily in /resume later"
+      "Name sessions with /rename to find them in /resume"
     ]
   },
   {
@@ -246,7 +238,7 @@
     "id": "effort-step-keys",
     "cooldown": 10,
     "contents": [
-      "Press ${A(\"chat:increaseEffort\")??"
+      "Press ${O(\"chat:increaseEffort\")??"
     ]
   },
   {
@@ -258,14 +250,14 @@
     "id": "desktop-app",
     "cooldown": 15,
     "contents": [
-      "Run Claude Code locally or remotely using the Claude desktop app · run /desktop"
+      "Run local and cloud sessions in the Claude desktop app · run /desktop"
     ]
   },
   {
     "id": "desktop-third-party",
     "cooldown": 15,
     "contents": [
-      "Run Claude Code in the Claude desktop app with your cloud provider or LLM gateway · ${Cw(\"https://clau.de/desktop-3p\",\"clau.de/desktop-3p\",{themeName:e.theme})}"
+      "Run Claude Code in the Claude desktop app with your cloud provider or LLM gateway · ${Av(\"https://clau.de/desktop-3p\",\"clau.de/desktop-3p\",{themeName:e.theme})}"
     ]
   },
   {
@@ -284,35 +276,35 @@
     "id": "?",
     "cooldown": null,
     "contents": [
-      "In Claude Code Desktop, each session gets its own iOS Simulator pane, where Claude tests your app, fixes what it finds, and checks again. · run /desktop"
+      "In Claude Code Desktop, Claude tests and fixes your app in an iOS Simulator pane · run /desktop"
     ]
   },
   {
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${Cw(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
+      "Use Claude Design to mock up screens before you build · ${Av(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
     ]
   },
   {
     "id": "claude-design-command",
     "cooldown": 15,
     "contents": [
-      "Working on UI? Run /design to mock up a few directions before you build"
+      "Run /design to mock up a few UI directions before you build"
     ]
   },
   {
     "id": "artifact-publish-plan",
     "cooldown": 5,
     "contents": [
-      "Working on a plan or design doc? Ask Claude to publish it as an artifact — a polished web page you can open in your browser."
+      "Ask Claude to publish a plan or design doc as an artifact, a web page you can open in your browser"
     ]
   },
   {
     "id": "artifact-duplicate",
     "cooldown": 5,
     "contents": [
-      "See an artifact you'd like to build on? Duplicate, in its title menu, gives you your own editable copy."
+      "Choose Duplicate in an artifact's title menu to get your own editable copy"
     ]
   },
   {
@@ -345,21 +337,21 @@
     "id": "push-notif",
     "cooldown": 15,
     "contents": [
-      "Get pinged on your phone when long tasks finish · enable push notifications in /config"
+      "Get notified on your phone when long tasks finish · turn on push notifications in /config"
     ]
   },
   {
     "id": "voice-mode",
     "cooldown": 10,
     "contents": [
-      "Use /voice to enable push-to-talk dictation"
+      "Use /voice for push-to-talk dictation"
     ]
   },
   {
     "id": "no-flicker",
     "cooldown": 10,
     "contents": [
-      "Try the new fullscreen renderer — flicker-free output, mouse support, auto-copy on select · /tui fullscreen"
+      "Try the fullscreen renderer for flicker-free output and mouse support · /tui fullscreen"
     ]
   },
   {
@@ -376,21 +368,21 @@
     "id": "c4e-desktop",
     "cooldown": 15,
     "contents": [
-      "Run Claude Code locally or remotely using the Claude desktop app — […]"
+      "Run local and cloud sessions in the Claude desktop app · […]"
     ]
   },
   {
     "id": "c4e-remote-sessions",
     "cooldown": 15,
     "contents": [
-      "Run tasks in the cloud while you keep coding locally — […]"
+      "Run tasks in the cloud while you keep coding · […]"
     ]
   },
   {
     "id": "c4e-ultrareview",
     "cooldown": 15,
     "contents": [
-      "/ultrareview runs a deep, multi-agent review of your changes — […]"
+      "/ultrareview runs a deep, multi-agent review of your changes · […]"
     ]
   },
   {
@@ -409,7 +401,7 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin:\n${Dr(\"suggestion\",e.theme)("
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${Go(\"suggestion\",e.theme)("
     ]
   },
   {
@@ -421,7 +413,7 @@
     "id": "subagent-fanout-nudge",
     "cooldown": 3,
     "contents": [
-      "Say […] and Claude sends a team. Each one digs deep so nothing gets missed."
+      "Say […] to run work in parallel"
     ]
   },
   {
@@ -438,7 +430,7 @@
     "id": "loop-command-nudge",
     "cooldown": 3,
     "contents": [
-      "${Dr(\"suggestion\",e.theme)("
+      "${Go(\"suggestion\",e.theme)("
     ]
   },
   {
@@ -468,30 +460,14 @@
     "id": "feedback-command",
     "cooldown": 15,
     "contents": [
-      "Use /feedback to help us improve!"
+      "Use /feedback to report a bug or share an idea"
     ]
   },
   {
     "id": "team-onboarding-share",
     "cooldown": 5,
     "contents": [
-      "Run /team-onboarding to turn your Claude usage into an onboarding guide — share it with your team in one link"
+      "Run /team-onboarding to turn your Claude usage into a guide to share with your team"
     ]
-  },
-  {
-    "id": "clear-when-topic-switch",
-    "contents": [
-      "Use /clear to start fresh when switching topics and free up context"
-    ],
-    "cooldown": null,
-    "condition": "shown after session exceeds 30 minutes"
-  },
-  {
-    "id": "btw-for-side-questions",
-    "contents": [
-      "Use /btw to ask a quick side question without interrupting Claude's current work"
-    ],
-    "cooldown": null,
-    "condition": "shown after 30 seconds if /btw hasn't been used yet"
   }
 ]
