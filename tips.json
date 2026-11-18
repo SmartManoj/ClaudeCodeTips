@@ -257,7 +257,7 @@
     "id": "desktop-third-party",
     "cooldown": 15,
     "contents": [
-      "Run Claude Code in the Claude desktop app with your cloud provider or LLM gateway · ${Av(\"https://clau.de/desktop-3p\",\"clau.de/desktop-3p\",{themeName:e.theme})}"
+      "Run Claude Code in the Claude desktop app with your cloud provider or LLM gateway · ${nv(\"https://clau.de/desktop-3p\",\"clau.de/desktop-3p\",{themeName:e.theme})}"
     ]
   },
   {
@@ -283,7 +283,7 @@
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${Av(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
+      "Use Claude Design to mock up screens before you build · ${nv(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
     ]
   },
   {
@@ -401,7 +401,7 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin:\n${Go(\"suggestion\",e.theme)("
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${Qo(\"suggestion\",e.theme)("
     ]
   },
   {
@@ -430,7 +430,7 @@
     "id": "loop-command-nudge",
     "cooldown": 3,
     "contents": [
-      "${Go(\"suggestion\",e.theme)("
+      "${Qo(\"suggestion\",e.theme)("
     ]
   },
   {
