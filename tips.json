@@ -1,13 +1,5 @@
 [
   {
-    "id": "team-artifacts",
-    "cooldown": 1,
-    "contents": [
-      "content_scan_error",
-      "content_unknown_error"
-    ]
-  },
-  {
     "id": "fotw-campaign",
     "cooldown": 1,
     "contents": [
@@ -238,7 +230,7 @@
     "id": "effort-step-keys",
     "cooldown": 10,
     "contents": [
-      "Press ${O(\"chat:increaseEffort\")??"
+      "Press ${E(\"chat:increaseEffort\")??"
     ]
   },
   {
@@ -257,7 +249,7 @@
     "id": "desktop-third-party",
     "cooldown": 15,
     "contents": [
-      "Run Claude Code in the Claude desktop app with your cloud provider or LLM gateway · ${nv(\"https://clau.de/desktop-3p\",\"clau.de/desktop-3p\",{themeName:e.theme})}"
+      "Run Claude Code in the Claude desktop app with your cloud provider or LLM gateway · ${$k(\"https://clau.de/desktop-3p\",\"clau.de/desktop-3p\",{themeName:e.theme})}"
     ]
   },
   {
@@ -283,7 +275,7 @@
     "id": "claude-design-contextual",
     "cooldown": 15,
     "contents": [
-      "Use Claude Design to mock up screens before you build · ${nv(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
+      "Use Claude Design to mock up screens before you build · ${$k(\"https://claude.ai/design?utm_source=claude_code&utm_medium=tip&utm_campaign=tengu_cedar_plume\",\"claude.ai/design\",{themeName:e.theme})}"
     ]
   },
   {
@@ -401,7 +393,7 @@
     "id": "frontend-design-plugin",
     "cooldown": 3,
     "contents": [
-      "Working with HTML/CSS? Install the frontend-design plugin:\n${Qo(\"suggestion\",e.theme)("
+      "Working with HTML/CSS? Install the frontend-design plugin:\n${es(\"suggestion\",e.theme)("
     ]
   },
   {
@@ -430,7 +422,7 @@
     "id": "loop-command-nudge",
     "cooldown": 3,
     "contents": [
-      "${Qo(\"suggestion\",e.theme)("
+      "${es(\"suggestion\",e.theme)("
     ]
   },
   {
